@@ -14,7 +14,7 @@
     },
     "autoload":{
     	"psr-4":{
-    		"Blacktrue\\" : "src"
+    		"Blacktrue\\CfdiValidator\\" : "src"
     	}
     }
 }

@@ -14,13 +14,16 @@ composer require blacktrue/sat-cfdi
 ```php
 require "vendor/autoload.php";
 
-use Blacktrue\Validator;
+use Blacktrue\CfdiValidator\Validator;
 
-print_r((new Validator([
-    "rfcEmisor" => "AAXHUI789D34",
-    "rfcReceptor" => "AAXXU2789D34",
-    "importe" => 1720.00,
-    "uuid" => "A841F995-C6AF-4088-8CAC-8D5F5680229B"
-]))->setPath('./')->validate());
+$data = (new Validator([
+    "rfcEmisor" => "XAXX010101000",
+    "rfcReceptor" => "XAXX010101000",
+    "uuid" => "B0020E00-0C5E-41D5-996B-AB7804E82810"
+]))->setPath('./') //Carpeta donde se guardara la imagen
+    ->setPhantomBin('phantomjs') //Binario de phantomjs
+    ->validate(); // Ejecutar validacion
+
+print_r($data);
 
 ```

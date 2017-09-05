@@ -1,6 +1,6 @@
 <?php
 
-namespace Blacktrue;
+namespace Blacktrue\CfdiValidator;
 
 use hotrush\Webshotter\Webshot;
 
@@ -25,12 +25,13 @@ class ScreenShot
 
             return $browser
                 ->setUrl($url)
-                ->setWidth(400)
-                ->setHeight(300)
+                ->setWidth(800)
+                ->setHeight(600)
                 ->setTimeout(300)
                 ->setFullPage(true)
                 ->saveToPng(md5($url), $path);
         } catch (\Exception $e) {
+            print_r($e->getMessage());
             return 'ERROR_NO_CONTENT';
         }
     }

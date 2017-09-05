@@ -1,6 +1,6 @@
 <?php
 
-namespace Blacktrue;
+namespace Blacktrue\CfdiValidator;
 
 use InvalidArgumentException;
 
@@ -9,7 +9,7 @@ use InvalidArgumentException;
  */
 class Validator
 {
-    const URL_IMAGE_SAT = 'https://verificacfdi.facturaelectronica.sat.gob.mx/?ctl00%24ScriptManager1=ctl00%24MainContent%24UpnlBusqueda%7Cctl00%24MainContent%24BtnBusqueda&__EVENTTARGET=&__EVENTARGUMENT=&__VIEWSTATE=XSYWXINYzkqMyAg7BU0bVxd6Ah5zsaE1uO4d5fW6ZGKJvJ%2B%2B3Xj2DaVyi14esMzcNC557M%2FmvGLtRk3KvyUp8DPxwURM%2F%2FysqRQYJ8VX9refDcD2vTnVAew%2Bghu86SpuICsoIJ9BdRuH7jFciEAV11FozYCUv1YPL10aIY2Qx%2FrITOdm7RvaK0mfT153MdODL9uKEvCeMiDf7iAJ%2Fi65mbyIhIyIDe4EFrexUxIm5C7%2FEGHjoUPwiO8u4ufmn%2By%2B056EHK0cPMqaqB1NqyXLkxu%2Ft6u0KN6b5pEDFw6mcQMqz%2Bgk29RiGjmx86h0GAu%2FyRiIdNisZnIIARbnnozrZOYN8llULxw7gPnyiWYm6mun6KSH&__VIEWSTATEGENERATOR=CA0B0334&__VIEWSTATEENCRYPTED=&ctl00%24MainContent%24TxtUUID=<%uuid%>&ctl00%24MainContent%24TxtRfcEmisor=<%rfcEmisor%>&ctl00%24MainContent%24TxtRfcReceptor=<%rfcReceptor%>&ctl00%24MainContent%24TxTCaptchaNumbers=66740&__ASYNCPOST=true&ctl00%24MainContent%24BtnBusqueda=Verificar%20CFDI';
+    const URL_IMAGE_SAT = 'https://verificacfdi.facturaelectronica.sat.gob.mx/?ctl00%24ScriptManager1=ctl00%24MainContent%24UpnlBusqueda%7Cctl00%24MainContent%24BtnBusqueda&__EVENTTARGET=&__EVENTARGUMENT=&__VIEWSTATE=oOVGK5DcCmE63Ir1voYI3TTrH17eLaKCNV0sifrNM%2Ftirsq%2F%2Bbt1k%2FhJK5s0%2FLAq%2FrG06rMeea%2FiTp75mKD61DAMo1l8WrazG%2BWFdIeiHtDJnUM37rVvxvOkyhL%2FkE68z9IbnQqgAOG4eUYTahgUuIordYZcpLqKJFSeW%2FBNG4p94HuE5k2m%2BNCf3vKLI5cXBa0ke7lK0hFo6HbgZkWNlrXd7QoOYTyMTldd8Ks9iCDMLgxRH%2BXK4yarZ0k5s7MWM5Q6gx0xDdofTKTHyxG%2F9c3s31LgpKl7IYK0pklkNUkaktypYXqDK8bG4TTtbY7ZlepiW8k0zOcdDaRHd6X7JnZRmFO258HzrKDazUnhk63z4bhc&__VIEWSTATEGENERATOR=CA0B0334&__VIEWSTATEENCRYPTED=&ctl00%24MainContent%24TxtUUID=<%uuid%>&ctl00%24MainContent%24TxtRfcEmisor=<%rfcEmisor%>&ctl00%24MainContent%24TxtRfcReceptor=<%rfcReceptor%>&ctl00%24MainContent%24TxTCaptchaNumbers=20255&__ASYNCPOST=true&ctl00%24MainContent%24BtnBusqueda=Verificar%20CFDI';
 
     /**
      * @var array
@@ -26,6 +26,9 @@ class Validator
      */
     protected $url;
 
+    /**
+     * @var string
+     */
     protected $phantomBin;
 
     /**

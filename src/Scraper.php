@@ -1,6 +1,6 @@
 <?php
 
-namespace Blacktrue;
+namespace Blacktrue\CfdiValidator;
 
 use Sunra\PhpSimple\HtmlDomParser;
 
@@ -9,7 +9,7 @@ class Scraper
     /**
      * @param string $url
      *
-     * @return string
+     * @return array
      */
     public static function getData($url = '')
     {
