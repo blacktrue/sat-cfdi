@@ -11,7 +11,7 @@ class Scraper
      *
      * @return array
      */
-    public static function getData($url = '')
+    public static function getData(string $url) : array
     {
         $data = [];
 

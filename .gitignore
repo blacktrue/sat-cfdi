@@ -1,5 +1,6 @@
 /vendor/
 .idea
 composer.lock
-test.php
+tests/images/*
+!tests/images/.gitkeep
 **/.DS_Store

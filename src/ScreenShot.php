@@ -31,7 +31,6 @@ class ScreenShot
                 ->setFullPage(true)
                 ->saveToPng(md5($url), $path);
         } catch (\Exception $e) {
-            print_r($e->getMessage());
             return 'ERROR_NO_CONTENT';
         }
     }
