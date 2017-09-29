@@ -16,14 +16,17 @@ require "vendor/autoload.php";
 
 use Blacktrue\CfdiValidator\Validator;
 
-$data = (new Validator([
-    "rfcEmisor" => "XAXX010101000",
-    "rfcReceptor" => "XAXX010101000",
-    "uuid" => "B0020E00-0C5E-41D5-996B-AB7804E82810"
-]))->setPath('./') //Carpeta donde se guardara la imagen
-    ->setPhantomBin('phantomjs') //Binario de phantomjs
-    ->validate(); // Ejecutar validacion
+$satValidator = new Validator();
 
-print_r($data);
+$response = $satValidator->setRfcEmisor('BMN930209927')
+    ->setRfcRecpetor('AUAC920422D38')
+    ->setUuid('B80052EB-3C91-4842-BA3C-DAEEDAC51F31')
+    ->setPhantomBin('phantomjs')
+    ->validate();
+    
+echo $response->getMessage(); //"Comprobante obtenido satisfactoriamente", "Recurso no encontrado, intente mas tarde."
+echo $response->getEstate(); //No encontrado, Vigente, Cancelado
+echo $response->getImage(); //Imagen en base64
+echo $response->getFechaCancelacion(); //Si es cancelacion
 
 ```
