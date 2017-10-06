@@ -1,7 +1,5 @@
 /vendor/
-.idea
 composer.lock
 tests/images/*
 !tests/images/.gitkeep
-.php_cs.cache
-**/.DS_Store
+/build/

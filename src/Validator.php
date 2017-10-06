@@ -14,21 +14,6 @@ class Validator
     /**
      * @var
      */
-    protected $fechaCancelacion;
-
-    /**
-     * @var
-     */
-    protected $message;
-
-    /**
-     * @var
-     */
-    protected $estate;
-
-    /**
-     * @var
-     */
     protected $rfcEmisor;
 
     /**
@@ -117,30 +102,6 @@ class Validator
         return $this;
     }
 
-    /**
-     * @return string
-     */
-    public function getFechaCancelacion(): string
-    {
-        return $this->fechaCancelacion;
-    }
-
-    /**
-     * @return string
-     */
-    public function getMessage(): string
-    {
-        return $this->message;
-    }
-
-    /**
-     * @return string
-     */
-    public function getEstate(): string
-    {
-        return $this->estate;
-    }
-
     private function validateParams() : void
     {
         $params = ['rfcEmisor', 'rfcReceptor', 'uuid'];
@@ -157,18 +118,16 @@ class Validator
     public function validate() : Response
     {
         $this->validateParams();
-        $data = Scraper::getData($this->generateUrl());
-        $this->message = $data['message'];
-        $this->estate = $data['estate'];
-        $this->fechaCancelacion = $data['fechaCancelacion'];
+        $url = $this->generateUrl();
+        $data = Scraper::getData($url);
 
-        return new Response($this);
+        return new Response($data);
     }
 
     /**
      * @return string
      */
-    public function generateUrl() : string
+    protected function generateUrl() : string
     {
         return str_replace(
             ['<%rfcEmisor%>', '<%rfcReceptor%>', '<%uuid%>'],

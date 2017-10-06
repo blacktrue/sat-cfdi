@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head><meta http-equiv="CACHE-CONTROL" content="NO-CACHE" /><meta http-equiv="PRAGMA" content="NO-CACHE" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta http-equiv="X-UA-Compatible" content="IE=8;IE=9" /><meta property="gobmxhelper" content="no plugins" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="shortcut icon" href="Content/images/favicon.ico" type="image/vnd.microsoft.icon" /><link rel="icon" href="Content/images/favicon.ico" type="image/vnd.microsoft.icon" /><link href="Content/main.css" rel="stylesheet" /><link href="Content/satMain.css" rel="stylesheet" />
+
+    <script src="/../Scripts/Jquery/jquery-3.1.1.js" type="text/javascript"></script>
+    <script src="../Scripts/gobmx.js" type="text/javascript"></script>
+    <script src="/../Scripts/Jquery/jquery.maskedinput.js"></script>
+    <script src="../Scripts/Jquery/FuncionesComunes.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+      $(document).ready(function () {
+
+        $.mask.definitions['h'] = "[A-Fa-f0-9]";
+
+        $.each($("input[mascara]"), function () {
+          var patternMask = $(this).attr('mascara');
+          switch (patternMask) {
+            case "9999-99-99":
+              $(this).mask(patternMask, { placeholder: "_" });
+              break;
+            case "GUID":
+              $(this).mask("hhhhhhhh-hhhh-hhhh-hhhh-hhhhhhhhhhhh");
+              break;
+            default:
+              $(this).mask(patternMask);
+              break;
+          }
+        });
+
+      });
+    </script>
+
+
+    <title>
+        Verificación de Comprobantes Fiscales Digitales por Internet
+    </title></head>
+<body>
+<form method="post" action="./?ctl00%24ScriptManager1=ctl00%24MainContent%24UpnlBusqueda%7cctl00%24MainContent%24BtnBusqueda&amp;ctl00%24MainContent%24TxtUUID=B80052EB-3C91-4842-BA3C-DAEEDAC51F31&amp;ctl00%24MainContent%24TxtRfcEmisor=BMN930209927&amp;ctl00%24MainContent%24TxtRfcReceptor=AUAC920422D38&amp;ctl00%24MainContent%24TxTCaptchaNumbers=20255&amp;__ASYNCPOST=true&amp;ctl00%24MainContent%24BtnBusqueda=Verificar+CFDI" id="aspnetForm" class="form-horizontal" role="form">
+    <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="6ToFUA6EJX/cBwByyKQfnGP3MlIyI6Kk6+oosIwTK24yzyV7NBgjT/vH4DeJH6eO0zK7SNZvEEvY6oWlqw1St3ci6kqJGx7Xq+DdkXiL4u8zZvobUVcXHEevxrm62ClVce4wYqgAgHAY7HT2k9kOi2473NAGSGUgiaEgbv3XeBof6ulFm5Fuw+2rF4UbyvbL98NGUBEUwE5DKMojDk4VR7I0B2voK1q1L34VORevsyT/lOs6vJBtN7Mq5jijLj3yXH63YNyGBkCDnh22gT4J7JrPAFLO2X7jqxbyll6NBiBmQlOjuEelVRtrYxmSk+YXoyUoGlExeI7Vxr/sUYf49mfRcFoY5yHcc3Tkd89CnddqhT24Ydw96pNrVzc69rz32UDBCVUYJcOY8k+EQZvNz14+NmcqHtmPyKXWKYDN0x2ypOn4bN8VDMxWsar6nVpnfoXG+5vUT/2aaABUZkoOs5w0teBobW28bqd6PfbLClcC+vNu14eF/rWxfKUzm0mziaMpnDAe189euwGRGe49G3jxLhZXkn6HFdJtsXMFwPPnFefghzbZzMfU6XMLm6gd1r41wmAt25j0u2QhytuL0RINTEekypJajmOWDBbju7pDlRV01PQ/uN5qKfivb6uH06gW5oWRIQY9+d9A+LSuFigRshGpf7DH2SS99utGHC6yH9OZlttt6Mfl1Xr9MaYR+MMtKO7RFFxRTtC3u3O21NauKgq3pPT4k5OSvJ/omG42DvVnda+WYlWI+V29LuFR6AA3pE7tT0MW9vlLonsmYa0RHgw+MsTjfYP0NLBzfoITSfHr2h5aH5s3CXrWq4uy+ucwFBg9z+HOWTbWIGXsYG+SjbwHHzZRc99XYBgNTaCIrud7M3EiEaNmpqdDnPbzz/N0fPhREVXsmEyUW1EG3uy0G/ImUh7THfqY2dG5PLSmcVDmcu/QBVe86ZaV1Xb539geCIu/ZKdEpYGAP3C/UKO4KTg=" />
+
+
+    <script src="/ScriptResource.axd?d=uHIkleVeDJf4xS50Krz-yPqbr3Ah7us24wZAnCCM2F8AgYCzZsY4mUc_XNtj-Xm14k9QllBneNK8RJhA6dNV9vVqPcB6QNXha041RYm3ONnVxrc2ET2RbUeNWb_8ZAnSLPPPSvpeHe3doGTQt8vIjs-OP3w1&amp;t=7e14f9a4" type="text/javascript"></script>
+    <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+    <input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+
+
+    <main role="main">
+
+        <div id="cuerpo_principal" class="row">
+            <div id="encabezado" class="row">
+                <div id="encabezadoPortal">
+                    <nav class="navbar navbar-inverse sub-navbar navbar-fixed-top">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#subenlaces">
+                                    <span class="sr-only">Interruptor de Navegación</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="/">Factura electrónica</a>
+                            </div>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+            <div id="cuerpo" style="margin-top: 70px" class="container  top-buffer-submenu">
+
+                <div id="ctl00_MainContent_UpnlBusqueda">
+
+                    <div class="container">
+                        <div class="row">
+                            <ol class="breadcrumb">
+                                <li><a href="http://www.gob.mx/"><i class="icon icon-home"></i></a></li>
+                                <li><a href="#">Inicio</a></li>
+                            </ol>
+                        </div>
+                        <div class="row">
+                            <img src="Content/images/logoSHCP.jpg" alt="Logo SHCP">
+                            <img src="Content/images/logoSAT.jpg" alt="Logo SAT">
+                        </div>
+                        <div class="row">
+                            <h3 class="titulo">Verificaci&oacute;n de comprobantes fiscales digitales por internet</h3>
+                        </div>
+                        <hr class="red">
+                    </div>
+                    <label class="control-label">A través de esta opción, usted podrá verificar si el comprobante fue certificado por el SAT </label>
+                    <br />
+                    <br />
+                    <div class="row form-group">
+                        <div class="col-md-4">
+                            <span id="ctl00_MainContent_LblUUIDTitulo" class="control-label">Folio fiscal</span><span class="form-text" id="marcaError_TxtUUID">*</span>:
+                            <input name="ctl00$MainContent$TxtUUID" type="text" maxlength="36" id="ctl00_MainContent_TxtUUID" class="form-control" style="text-transform: uppercase;" />
+                            <small class="form-text form-text-error" id="mensajeError_TxtUUID" style="display: none">Este campo es obligatorio</small>
+                        </div>
+                        <div class="col-md-4">
+                            <span id="ctl00_MainContent_LblRfcEmisorTitulo" class="control-label">RFC emisor</span><span class="form-text" id="marcaError_TxtRfcEmisor">*</span>:
+                            <input name="ctl00$MainContent$TxtRfcEmisor" type="text" maxlength="13" id="ctl00_MainContent_TxtRfcEmisor" class="form-control" style="text-transform: uppercase" />
+                            <small class="form-text form-text-error" id="mensajeError_TxtRfcEmisor" style="display: none">Este campo es obligatorio</small>
+                        </div>
+                        <div class="col-md-4">
+                            <span id="ctl00_MainContent_LblRfcReceptorTitulo" class="control-label">RFC receptor</span><span class="form-text" id="marcaError_TxtRfcReceptor">*</span>:
+                            <input name="ctl00$MainContent$TxtRfcReceptor" type="text" maxlength="13" id="ctl00_MainContent_TxtRfcReceptor" class="form-control" style="text-transform: uppercase" />
+                            <small class="form-text form-text-error" id="mensajeError_TxtRfcReceptor" style="display: none">Este campo es obligatorio</small>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="">
+                            <div class="col-md-4">
+                                <div id="captcha" class="captcha">
+                                    <img id="ctl00_MainContent_ImgCaptcha" class="captchaimage" src="GeneraCaptcha.aspx?Data=TLQHUfH8YXPpMlzx/Q+AD9tteLb5PlAuMkxT1mtZAzGyQk700zWeFenY0sY3W4C+m9B8FolqvAM3jonjMoYmwgCx3z9UzI4laf9e2yDbTlg=" />
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <span id="ctl00_MainContent_LblTitleCaptcha" class="control-label">Proporcione los dígitos de la imagen</span><span class="form-text" id="marcaError_TxtCaptchaNumbers">*</span>:
+                                <input name="ctl00$MainContent$TxtCaptchaNumbers" type="text" maxlength="5" id="ctl00_MainContent_TxtCaptchaNumbers" class="form-control" />
+                                <small class="form-text form-text-error" id="mensajeError_TxtCaptchaNumbers" style="display: none">Este campo es obligatorio</small>
+                            </div>
+                            <div class="col-md-4">
+                                <br />
+                                <input type="submit" name="ctl00$MainContent$BtnBusqueda" value="Verificar CFDI" onclick="return performCheck();WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainContent$BtnBusqueda&quot;, &quot;&quot;, true, &quot;Busqueda&quot;, &quot;&quot;, false, false))" id="ctl00_MainContent_BtnBusqueda" class="btn btn-primary pull-right" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 form-group">
+                        <div class="col-md-8 pull-left text-muted text-vertical-align-button">
+                            * Datos obligatorios
+                        </div>
+
+                    </div>
+                    <div>
+                        <input type="hidden" name="ctl00$MainContent$hdnTotal" id="ctl00_MainContent_hdnTotal" />
+                        <input type="hidden" name="ctl00$MainContent$hdnSello" id="ctl00_MainContent_hdnSello" />
+                    </div>
+                    <span id="ctl00_MainContent_lblParam"></span>
+                    <!--Validadores Folio Fiscal-->
+                    <!--Campos Requeridos-->
+                    <div>
+
+                        <!--Formato por sección-->
+
+                        <!--Validadores RFC Emisor-->
+
+
+                        <!--Validadores RFC Receptor-->
+
+
+                        <!-- Validadores Captcha-->
+
+
+
+
+                        <br />
+
+                    </div>
+                    <div id="ctl00_MainContent_PnlResultados">
+
+                        <div class="form-group" id="DivContenedor">
+                            <div class="col-sm-12" id="ContenedorDinamico" style="overflow: auto;">
+                                <table class="table table-striped">
+                                    <tr class="headerTable">
+                                        <th>RFC del emisor </th>
+                                        <th>Nombre o razón social del emisor </th>
+                                        <th>RFC del receptor </th>
+                                        <th>Nombre o razón social del receptor </th>
+                                    </tr>
+                                    <tr class="dataTable">
+                                        <td>
+                                            <span id="ctl00_MainContent_LblRfcEmisor">BMN930209927</span>
+                                        </td>
+                                        <td>
+                                            <span id="ctl00_MainContent_LblNombreEmisor">BANCO MERCANTIL DEL NORTE SA INSTITUCION DE BANCA MULTIPLE GRUPO FINANCIERO BANORTE</span>
+                                        </td>
+                                        <td>
+                                            <span id="ctl00_MainContent_LblRfcReceptor">AUAC920422D38</span>
+                                        </td>
+                                        <td>
+                                            <span id="ctl00_MainContent_LblNombreReceptor">CESAR RENE AGUILERA ARREOLA</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="headerTable">
+                                        <th>Folio fiscal </th>
+                                        <th>Fecha de expedición </th>
+                                        <th>Fecha certificación SAT </th>
+                                        <th>PAC que certificó </th>
+                                    </tr>
+                                    <tr class="dataTable">
+                                        <td>
+                                            <span id="ctl00_MainContent_LblUuid">B80052EB-3C91-4842-BA3C-DAEEDAC51F31</span>
+                                        </td>
+                                        <td>
+                                            <span id="ctl00_MainContent_LblFechaEmision">2016-10-31T23:59:59</span>
+                                        </td>
+                                        <td>
+                                            <span id="ctl00_MainContent_LblFechaCertificacion">2016-11-01T19:54:04</span>
+                                        </td>
+                                        <td>
+                                            <span id="ctl00_MainContent_LblRfcPac">DCD090706E42</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="headerTable">
+                                        <th>Total del CFDI </th>
+                                        <th>Efecto del comprobante </th>
+                                        <th>Estado CFDI </th>
+                                        <th id="ctl00_MainContent_thFechaCancelacion" style="visibility:hidden;">Fecha de cancelación </th>
+
+                                    </tr>
+                                    <tr class="dataTable">
+                                        <td>
+                                            <span id="ctl00_MainContent_LblMonto">$0.18</span>
+                                        </td>
+                                        <td>
+                                            <span id="ctl00_MainContent_LblEfectoComprobante">ingreso</span>
+                                        </td>
+                                        <td>
+                                            <span id="ctl00_MainContent_LblEstado">Vigente</span>
+                                        </td>
+                                        <td id="ctl00_MainContent_tdFechaCancelacion" style="visibility:hidden;">
+                                            <span id="ctl00_MainContent_LblFechaCancelacion"></span>
+                                        </td>
+
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="clearfix">
+                            <div class="pull-right">
+                                <input type="hidden" name="ctl00$MainContent$strBusqueda" id="ctl00_MainContent_strBusqueda" value="B80052EB-3C91-4842-BA3C-DAEEDAC51F31|BMN930209927|AUAC920422D38" />
+                                <input type="button" id="BtnImprimir" value="Imprimir" onclick="javascript: window.print();" class="btn btn-primary" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <br>
+                <br>
+                <br>
+
+            </div>
+            <div id="ctl00_MainContent_UpdateProgress1" style="display:none;">
+
+                <div class="progresofondo">
+                </div>
+                <div class="progreso">
+                    <img src="Images/ajax-loader.gif" style="float: left; margin-top: 5px;" />
+                    <h2 style="width: 200px; float: left; font-size: 12pt;">Buscando CFDI...</h2>
+                </div>
+
+            </div>
+            <script type="text/javascript">
+              function validarCaracteres() {
+                supressUpdatePanelRequestErrorCharacters("#ctl00_MainContent_TxtRfcReceptor");
+                supressUpdatePanelRequestErrorCharacters("#ctl00_MainContent_TxtRfcEmisor");
+              }
+
+
+              function performCheck() {
+
+                var respuesta = true;
+
+                $('[name*="Txt"]').each(function () {
+
+                  var idEndText = $(this)[0].id.split('_')[$(this)[0].id.split('_').length - 1];
+
+                  if (($('[name*="'+ idEndText+'"]')[0].value != undefined && $('[name*="'+ idEndText+'"]')[0].value.trim().length == 0) ||
+                    (idEndText == "TxtUUID" && $(this)[0].value == "________-____-____-____-____________"))
+                  {
+                    $("#marcaError_" + idEndText).addClass("form-text-error");
+                    $("#mensajeError_" + idEndText).show();
+                    respuesta = respuesta && false;
+                    $(this).focus();
+                  }
+
+                });
+                return respuesta;
+              }
+
+
+              $('[name*="Txt"]').bind("blur", function (event) {
+
+                var idEndText = $(this)[0].id.split('_')[$(this)[0].id.split('_').length - 1];
+
+                if ($(this)[0].value != undefined && $(this)[0].value.trim().length > 0){
+
+                  if(idEndText != "TxtUUID"  || (idEndText == "TxtUUID" && $(this)[0].value != "________-____-____-____-____________") ){
+                    $("#marcaError_" + idEndText).removeClass("form-text-error");
+                    $("#mensajeError_" + idEndText).hide();
+
+                    return false;
+
+                  }
+                }
+
+
+                return true;
+
+              });
+
+
+            </script>
+
+            <div id="dvAlertMaster"></div>
+        </div>
+        </div>
+        <div class="footer">
+        </div>
+    </main>
+    <script type="text/javascript">
+      Sys.WebForms.PageRequestManager.getInstance().add_endRequest(endRequest);
+
+      function endRequest(sender, e) {
+        if (e.get_error()) {
+
+          if ($("#divRedLenta") != undefined) {
+            $("#divRedLenta").remove();
+          }
+
+          var newDivSuccess = document.createElement('div');
+          newDivSuccess.id = "divRedLenta";
+          newDivSuccess.className = "col-md-12 alert alert-warning alert-dismissible";
+          newDivSuccess.innerHTML = "<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button><strong>¡Atención! <br/></strong> En estos momentos el servicio de red presenta lentitud, favor de intentar nuevamente.";
+          document.getElementById('dvAlertMaster').appendChild(newDivSuccess);
+          $('html, body').animate({ scrollTop: $('#dvAlertMaster').offset().top }, 'slow');
+          //alert('En estos momentos el servicio de red presenta lentitud, favor de intentar nuevamente.');
+
+          e.set_errorHandled(true);
+        }
+      }
+
+    </script>
+
+
+    <script type="text/javascript">
+      //<![CDATA[
+      $("#ctl00_MainContent_TxtUUID").mask("hhhhhhhh-hhhh-hhhh-hhhh-hhhhhhhhhhhh");//]]>
+    </script>
+</form>
+</body>
+</html>

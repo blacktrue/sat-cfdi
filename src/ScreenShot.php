@@ -18,7 +18,7 @@ class ScreenShot
      *
      * @return string
      */
-    public static function capture($url, $path, $phantomBin)
+    public static function capture($url, $path, $phantomBin) : string
     {
         try {
             $browser = new Webshot($phantomBin);
