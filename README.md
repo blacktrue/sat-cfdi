@@ -26,7 +26,8 @@ $response = $satValidator->setRfcEmisor('BMN930209927')
     
 echo $response->getMessage(); //"Comprobante obtenido satisfactoriamente", "Recurso no encontrado, intente mas tarde."
 echo $response->getEstate(); //No encontrado, Vigente, Cancelado
-echo $response->getImage(); //Imagen en base64
 echo $response->getFechaCancelacion(); //Si es cancelacion
+
+echo $satValidator->generateImage() //Imagen en base64
 
 ```
