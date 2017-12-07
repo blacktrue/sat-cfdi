@@ -1,6 +1,8 @@
 
 # SAT-CFDI  
 
+[![Build Status](https://travis-ci.org/blacktrue/sat-cfdi.svg?branch=master)](https://travis-ci.org/blacktrue/sat-cfdi)
+
 Obtiene el estatus de un CFDI ante la autoridad y entrega la evidencia.
 
 ## Instalacion por composer
